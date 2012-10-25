@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from lib.geventdaemon import GeventDaemon
 import os
-home = os.environ["HOME"]
+
 pidfile = '/var/run/smsd/proxy.pid'
 class ProxyDaemon(GeventDaemon):
 	def run(self):
